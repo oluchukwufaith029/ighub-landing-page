@@ -1,0 +1,122 @@
+html {
+    background-image: linear-gradient(0deg, rgba(12, 2, 2, 0.3), rgba(8, 1, 1, 0.3)), url('../images/bg.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.nav-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.nav-item {
+    margin: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #b6b8bb;
+    transition: color 1s;
+}
+
+header a:hover {
+    color: white;
+}
+
+button {
+    background-color: #ee5536;
+    border: none;
+    color: white;
+    height: 3.5em;
+    width: 12em;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.showcase {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+h4 {
+    color:  #ffff;
+}
+
+.threeIs{
+    text-align: center;
+    color:  #ffff;
+    font-size: 5em;
+}
+
+.overlay{
+    position: absolute;
+    background-color: red;
+    height: 85vh;
+    width:100vw ;
+}
+
+.menu-icon{
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.nav-container-mobile {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    font-size: 18px;
+    background-color: white;
+}
+
+.nav-container-mobile a {
+    display: block;
+    text-decoration: none;
+    color: #b6b8bb;
+    transition: color 1s;
+}
+
+.nav-container-mobile a:hover {
+    color: blue;
+}
+
+.nav-container-mobile button {
+   margin: 1em;
+   height: 3em;
+    width: 9em;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 985px) {
+    .nav-container, header button, .padding-element  {
+      display: none;
+      justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: block;
+        background: #c7c5c5;
+        padding: 0.5em;
+        margin-right: 3em;
+    }
+
+    .logo {
+        margin-left: 3em;
+    }
+  }
